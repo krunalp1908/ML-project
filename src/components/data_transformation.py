@@ -4,13 +4,14 @@ import pandas as pd
 import numpy as np
 from src.exception import CustomException
 from src.logger import logging
-from dataclasses import dataclass
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
 from src.utils import save_object
+from dataclasses import dataclass
+
 
 @dataclass
 class DataTransformationConfig:
